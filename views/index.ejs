@@ -7,11 +7,11 @@
 </head>
 <body>
     <a href="./new">Post new message</a>
-    <% messages.forEach((message) => { %>
+    <% rows.forEach((row) => { %>
         <div>
-            <h6><%= message.user %></h6>
-            <p><%= message.text %></p>
-            <div><%= message.added %></div>
+            <h6><%= row.author %></h6>
+            <p><%= row.message %></p>
+            <div><%= row.created_at %></div>
         </div>
     <%})%>
 </body>
